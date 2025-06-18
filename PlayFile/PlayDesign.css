@@ -1,0 +1,57 @@
+
+/*Container Color and Border*/
+.containerTitle{
+    background: rgba(255, 253, 253, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 253, 253, 0.63);
+}
+
+.leftSection{
+    background: rgba(255, 253, 253, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 253, 253, 0.63);
+}
+.rightSection>div{
+    background: rgba(255, 253, 253, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.4px);
+    -webkit-backdrop-filter: blur(2.4px);
+    border: 1px solid rgba(255, 253, 253, 0.63);
+}
+.arrowButton{
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 10px #5d00f4, 1px 1px 10px #400027;
+    filter: blur(0.6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Design and Styles*/
+p{
+    color: white;
+    text-shadow: 1px 1px 10px #5d00f4, 1px 1px 10px #400027;
+    filter: blur(0.6px);
+}
+.carStatsContainer>p{
+    margin-left: 15px;
+}
+.carStatsContainer>div>div{
+    
+    box-shadow: 1px 1px 10px #5d00f4, 1px 1px 10px #f5109d;
+
+}
+
+/*Hover and Mouse Over*/
+.rightSection>div:hover{
+    background-color: rgba(128, 128, 128, 0.558);
+    border-left:5px;
+    border-left-style:inset;
+    border-left-color: rgb(238, 118, 5);
+    cursor: pointer;
+}
+
