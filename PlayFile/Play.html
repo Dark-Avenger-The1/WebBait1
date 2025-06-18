@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Waste Land City</title>
+        <!--Font Object Link-->
+        <link href='https://fonts.googleapis.com/css?family=Pixelify Sans' rel='stylesheet'>
+        <!--Star Link Object-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Design/CSS Link-->
+        <link rel="stylesheet" href="PlayDesign.css">
+        <style>
+            p{
+                display: inline-block;
+                font-family: 'Pixelify Sans';
+            }
+            body{
+                background-image: url(https://media1.tenor.com/m/1gfCwmVdMB8AAAAd/vaporwave.gif);
+                background-repeat:no-repeat ;
+                background-size:cover ;
+                background-attachment:fixed ;
+                
+            }
+            .webContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 715px;
+            }
+            .containerTitle{
+                width: 1350px;
+                height: 60px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+            }
+                .containerTitle>p{
+                    font-size: 30px;
+                    margin-top: 30px;
+                    margin-left: 30px;
+                    color: white;
+                }
+                .containerTitle>img{
+                    object-fit: contain;
+                    width: 50px;
+                    margin-left: 20px;
+                    
+                }
+
+            .carContainer{
+                display: flex;
+                position: relative;
+                width: 1350px;
+                height: 500px;
+            }
+
+            .carContainer>div{
+                height: 500px;
+            }
+
+            /*Left Section*/
+            .leftSection{
+                width: 900px;
+            }
+                .carDisplayTitle{
+                    width: 900px;
+                    height: 125px;
+                    position: relative;
+                }
+                /*Fonts and Rate of the car*/
+                .carName{
+                    font-size: 50px;
+                    padding-left: 20px;
+                    margin-bottom: 5px;
+                    margin-top: 40px;
+                }
+                .starContainer{
+                    margin-left: 20px;
+                    width: 150px;
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: 5px;    
+                }
+                .star{
+                    color: white;
+                }
+
+                /* Car Info Container*/
+                .carInfo{
+                    display: flex;
+                    
+                    width: 900px;
+                    height: 375px;
+                }   
+                    .carInfo>div{
+                        height: 375px;
+                    }
+                    /*Car Stats*/
+                    .carStats{
+                        width: 300px;
+                        position: relative;
+                    }
+                        /*Car Stats Container*/
+                        .carStatsContainer{
+                            height: 263px;
+                            position: absolute;
+                            width: 300px;
+                            bottom: 70px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        }
+                        .carStatsContainer>p{
+                            margin-top: 0px;
+                            margin-bottom: 0px;
+                        }
+                        .carStatsContainer>div{
+                            height: 30px;
+                            display: flex;
+                            justify-content: space-around;
+                            align-items: center;
+                        }
+                        .carStatsContainer>div>div{
+                            border: 1px;
+                            border-style:solid ;
+                            width: 20px;
+                            height: 20px;
+                            background-color: rgb(87, 83, 83);
+                        }
+                    /*Car Display*/
+                    .carDisplay{
+                        width: 600px;
+                        position: relative;
+                    }
+                        .carDisplay>img{
+                            position: absolute;
+                            bottom: 90px;
+                            right: 100px
+                            
+                        }
+                        
+
+
+            /*Right Section*/
+            .rightSection{
+  
+                width: 450px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;            
+            }
+                /*Buttons*/
+                .rightSection>div{
+                    width: 440px;
+                    text-align: center;
+                }
+                .arrowButton{
+                    height: 30px;
+                }
+                .carButton{
+                    height: 100px;
+                    display: flex;
+                }
+                .carButton>div{
+                    height: 100px;
+                }
+                    /* Car Button Details*/
+                    .carImg{
+                        width: 160px;
+                        position: relative;
+                    }
+                        .carImg>img{
+                            width: 120px;
+                            position: absolute;
+                            bottom: 0px;
+                            right: 20px;
+                        }
+                    .carDetails{
+                        width: 279px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                        .carDetails>p{
+                            margin-bottom: 5px;
+                            font-size: 30px;
+                            text-align: left;
+                            margin-left: 5px;
+                        } 
+                        .carDetails>div{
+                            margin-left: 5px;
+                        }     
+                        /*Star default*/
+                        .star1{
+                            color: yellow;
+                        }
+            .exitStartContainer{
+                display: flex;
+                position: fixed;
+                width: 170px;
+                justify-content: space-between;
+                bottom: 30px;
+                left: 90px;
+            }
+            .exitStartContainer>div{
+                background: rgba(255, 253, 253, 0.14);
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(2.4px);
+                -webkit-backdrop-filter: blur(2.4px);
+                border: 1px solid rgba(255, 253, 253, 0.63);
+                padding-top:5px ;
+                padding-bottom:5px ;
+                color: white;
+                text-shadow: 1px 1px 10px #5d00f4, 1px 1px 10px #400027;
+                padding-left:5px ;
+                padding-right: 5px;
+                font-size: 20px;
+                border-radius: 10px;
+                 font-family: 'Pixelify Sans';
+            }
+            .exitStartContainer>div>a{
+                color: white;
+                text-shadow: 1px 1px 10px #5d00f4, 1px 1px 10px #400027;
+                text-decoration: none;
+                padding-left:5px ;
+                padding-right: 5px;
+                font-size: 20px;
+                font-family: 'Pixelify Sans';
+            }            
+        </style>
+    </head>
+    <body>
+        <!--Use to center the div-->
+       <div class="webContainer">
+            <div class="containerTitle">
+                <img src="Icons/CarIcon2.jpg" alt="">
+                <p>SELECT YOUR CAR</p>
+            </div>
+
+            <!--Car Container DIV-->
+            <div class="carContainer">
+                <!--Section where the titlt, stats, and image of the car-->
+                <div class="leftSection">
+                    <div class="carDisplayTitle">
+                        <p id="carName" class="carName">???</p>
+                        <div class="starContainer">
+                            <span id="starRate1" class="fa fa-star star"></span>
+                            <span id="starRate2" class="fa fa-star star"></span>
+                            <span id="starRate3" class="fa fa-star star"></span>
+                            <span id="starRate4" class="fa fa-star star"></span>
+                            <span id="starRate5" class="fa fa-star star"></span>
+                        </div>
+                    </div>
+                    <!--Container of the car info and image-->
+                    <div class="carInfo">
+                        <div class="carStats">
+                            <div class="carStatsContainer">
+                                <p>Speed</p>
+                                <div class="speedStats">
+                                    <div id="speedStarDisplay1"></div>
+                                    <div id="speedStarDisplay2"></div>
+                                    <div id="speedStarDisplay3"></div>
+                                    <div id="speedStarDisplay4"></div>
+                                    <div id="speedStarDisplay5"></div>
+                                </div>
+                                <p>Accelaration</p>
+                                <div class="accelarationStats">
+                                    <div id="accelStarDisplay1"></div>
+                                    <div id="accelStarDisplay2"></div>
+                                    <div id="accelStarDisplay3"></div>
+                                    <div id="accelStarDisplay4"></div>
+                                    <div id="accelStarDisplay5"></div>
+                                </div>
+                                <p>Road Grip</p>
+                                <div class="tractionStats">
+                                    <div id="breakStarDisplay1"></div>
+                                    <div id="breakStarDisplay2"></div>
+                                    <div id="breakStarDisplay3"></div>
+                                    <div id="breakStarDisplay4"></div>
+                                    <div id="breakStarDisplay5"></div>
+                                </div>
+                                <p>Handling</p>
+                                <div class="handlingStats">
+                                    <div id="handlingStarDisplay1"></div>
+                                    <div id="handlingStarDisplay2"></div>
+                                    <div id="handlingStarDisplay3"></div>
+                                    <div id="handlingStarDisplay4"></div>
+                                    <div id="handlingStarDisplay5"></div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="carDisplay">
+                            <img id="carDisplay" src="" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!--Car Selection and buttons-->
+                <div class="rightSection">
+                    <div id="up" class="arrowButton">&#9650;</div>
+                    <div id="button1" class="carButton">
+                        <div class="carImg">
+                            <img id="img1" src="CarModel/car1.gif" alt="">
+                        </div>
+                        <div class="carDetails">
+                            <p id="carName1">Tracker</p>
+                        <div class="starContainer">
+                            <span id="button1Star1" class="fa fa-star star star1"></span>
+                            <span id="button1Star2" class="fa fa-star star star1"></span>
+                            <span id="button1Star3" class="fa fa-star star"></span>
+                            <span id="button1Star4" class="fa fa-star star"></span>
+                            <span id="button1Star5" class="fa fa-star star"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="button2" class="carButton">
+                        <div class="carImg">
+                            <img id="img2" src="CarModel/car2.gif" alt="">
+                        </div>
+                        <div class="carDetails">
+                            <p id="carName2">Jalpa</p>
+                        <div class="starContainer">
+                            <span id="button2Star1" class="fa fa-star star star1"></span>
+                            <span id="button2Star2" class="fa fa-star star star1"></span>
+                            <span id="button2Star3" class="fa fa-star star"></span>
+                            <span id="button2Star4" class="fa fa-star star"></span>
+                            <span id="button2Star5" class="fa fa-star star"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="button3" class="carButton">
+                        <div class="carImg">
+                            <img id="img3" src="CarModel/car3.gif" alt="">
+                        </div>
+                        <div class="carDetails">
+                            <p id="carName3">Gallardo</p>
+                        <div class="starContainer">
+                            <span id="button3Star1" class="fa fa-star star star1"></span>
+                            <span id="button3Star2" class="fa fa-star star star1"></span>
+                            <span id="button3Star3" class="fa fa-star star star1"></span>
+                            <span id="button3Star4" class="fa fa-star star"></span>
+                            <span id="button3Star5" class="fa fa-star star"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="button4" class="carButton">
+                        <div class="carImg">
+                            <img id="img4" src="CarModel/car4.gif" alt="">
+                        </div>
+                        <div class="carDetails">
+                            <p id="carName4">Patrol</p>
+                        <div class="starContainer">
+                            <span id="button4Star1" class="fa fa-star star star1"></span>
+                            <span id="button4Star2" class="fa fa-star star star1"></span>
+                            <span id="button4Star3" class="fa fa-star star star1"></span>
+                            <span id="button4Star4" class="fa fa-star star"></span>
+                            <span id="button4Star5" class="fa fa-star star"></span>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="down" class="arrowButton">&#9660;</div>
+                </div>
+                
+            </div>
+       </div>
+
+       <!--Play and Return Section-->
+       <div class="exitStartContainer">
+            <div><a href="https://www.youtube.com/shorts/A39NyN5xMjU">Return</a></div>
+            <div id="playButton" class="play"><a id="linkPlay">Play</a></div>
+       </div>
+       <script src="Play.js"></script>
+       
+    </body>
+</html>
